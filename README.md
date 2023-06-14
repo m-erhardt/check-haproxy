@@ -18,12 +18,12 @@
       * If any of the **frontends** is getting close to it's **session limit**
       * If all **backends** are `UP`
       * If any of the **backends** is getting close to it's **session limit**
-    * ![instance mode](docs/img/mode_instance_small?raw=true "instance mode")
+    * ![instance mode](docs/img/mode_instance_small.png?raw=true "instance mode")
   * `--mode frontend`
     * Checks single HAProxy frontend
       * If the specified **frontend** is `OPEN`
       * If the specified **frontend** is getting close to it's **session limit**
-    * ![frontend mode](docs/img/mode_frontend_small?raw=true "frontend mode")
+    * ![frontend mode](docs/img/mode_frontend_small.png?raw=true "frontend mode")
 
 ### Parameters
 ```
@@ -57,7 +57,7 @@ Mode-specific arguments:
 
 OK - haproxy running with 13 frontends, 13 backends, 25 servers and 137 sessions -  | 'sessions'=137;;;; 'sessions_total'=6916926;;;; 'frontends'=13;;;; 'backends'=13;;;; 'servers'=25;;;;
 ```
-![instance mode](docs/img/mode_instance?raw=true "instance mode")
+![instance mode](docs/img/mode_instance.png?raw=true "instance mode")
 
 ```bash
 # Frontend mode
@@ -68,4 +68,4 @@ OK - haproxy running with 13 frontends, 13 backends, 25 servers and 137 sessions
 
 OK - HAProxy frontend my-haproxy-frontend is OPEN, Sessions: 143/10000 | 'sessions'=143;8000.0;9000.0;0;10000 'bytein'=10667774618B;;;; 'byteout'=201081437032B;;;;
 ```
-![frontend mode](docs/img/mode_frontend?raw=true "frontend mode")
+![frontend mode](docs/img/mode_frontend.png?raw=true "frontend mode")
